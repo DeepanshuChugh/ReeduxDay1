@@ -28,7 +28,7 @@ export const Reducer =(state={count:0},action)=>{
             }
         case DIVIDE:
             {
-                return {...state,count:state.countaction.payload.value}
+                return {...state,count:state.count/action.payload.value}
             }
         default:
             return {...state}      
